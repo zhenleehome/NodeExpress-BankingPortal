@@ -16,7 +16,7 @@ const users = JSON.parse(userData);
 
 app.get('/', (req, res) => res.render('index', 
 {
-    title: 'AccountSummary',
+    title: 'Account Summary',
     accounts
 }));
 
