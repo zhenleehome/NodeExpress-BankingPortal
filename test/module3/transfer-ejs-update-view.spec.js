@@ -18,6 +18,7 @@ describe('Update `transfer` view', () => {
         'The form is missing a `method` attribute.'
       );
     } catch (err) {
+      console.log(err);
       assert(err.message.indexOf('compiling ejs') < -1, `Error compiling transfer.ejs`);
     }
     assert(
